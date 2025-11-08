@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - The Miracle</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.jpg" alt="The Miracle Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html" class="cart-icon" data-count="0">&#128722;</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="cart">
+    <h1>Your Cart</h1>
+    <div class="cart-items">
+      <!-- Cart items will be dynamically inserted here -->
+    </div>
+    <div class="cart-summary">
+      <h3>Total: <span id="cart-total">$0.00</span></h3>
+    </div>
+  
+    <!-- Contact and Address Form -->
+    <form id="checkout-form" class="checkout-form">
+      <h2>Contact & Delivery Details</h2>
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Delivery Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn checkout">Proceed to Checkout</button>
+    </form>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 The Miracle. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts/cart.js"></script>
+</body>
+</html>

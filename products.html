@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - The Miracle</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.jpg" alt="The Miracle Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html" class="cart-icon" data-count="0">&#128722;</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="products">
+    <h1>Our Products</h1>
+     <!-- Search Bar -->
+   <div class="search-bar">
+    <input type="text" id="search-input" placeholder="Search products..." oninput="filterProducts()">
+    <button class="btn search-btn">Search</button>
+   </div>
+    <div class="product-list">
+      <div class="product" data-name="Natural Herbal Shampoo">
+        <img src="images/product1.jpg" alt="Product 1">
+        <h3>Natural Herbal Shampoo</h3>
+        <p>A gentle yet effective formula crafted to cleanse and revitalize your hair. Enriched with a blend of nourishing herbs like aloe vera, neem, and bhringraj, this shampoo strengthens hair roots, promotes growth, and soothes the scalp.</p><br><br>
+        <button class="btn add-to-cart" data-id="1" data-name="Herbal Shampoo" data-price="600.00">Add to Cart</button>
+      </div>
+      <div class="product" data-name="Rose Whitening Cream">
+        <img src="images/product2.jpg" alt="Product 2">
+        <h3>Rose Whitening Cream</h3>
+        <p>A luxurious blend designed to nourish and brighten your skin naturally. Infused with the essence of rose petals, this lightweight formula deeply hydrates while gently reducing dark spots and uneven tone.</p><br><br><br>
+        <button class="btn add-to-cart" data-id="2" data-name="Rose Whitening Cream" data-price="600.00">Add to Cart</button>
+      </div>
+      <div class="product" data-name="Organic Hair Serum">
+        <img src="images/product3.jpg" alt="Product 3">
+        <h3>Organic Hair Serum</h3>
+        <p>Revitalize Your Hair Naturally with Our Organic Hair Serum, Say goodbye to dull, lifeless hair and hello to radiant,healthy locks! Our Organic Hair Serum is a luxurious blend of nature’s finest ingredients,carefully crafted to nourish, strengthen, and protect your hair from root to tip.</p>
+        <button class="btn add-to-cart" data-id="3" data-name="Organic Hair Serum" data-price="300">Add to Cart</button>
+      </div>
+      <div class="product" data-name="Korean Rice & Coffe Facemask">
+        <img src="images/product4.jpeg" alt="Product 4">
+        <h3>Rice & Coffe Facemask</h3>
+        <p>Revitalize your skin with the nourishing blend of traditional Korean ingredients in our Rice & Coffee Face Mask. This innovative mask combines the gentle exfoliating properties of rice bran with the antioxidant-rich benefits of coffee to reveal a brighter, smoother and radiant skin.</p>
+        <button class="btn add-to-cart" data-id="4" data-name="Korean Rice & Coffe Facemask" data-price="600">Add to Cart</button>
+      </div>
+      <div class="product" data-name="Herbal Oil">
+        <img src="images/product5.jpeg" alt="Product 5">
+        <h3>Organic Hair Herbal Oil</h3>
+        <p>Experience the natural healing power of our Herbal Oil, a carefully crafted blend of pure, plant-based ingredients designed to nourish, rejuvenate, and restore balance to your skin, hair, and body. Infused with a harmonious combination of traditional herbs and essential oils.</p>
+        <button class="btn add-to-cart" data-id="5" data-name="Herbal Oil" data-price="800">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/home.php" target="_blank"><img src="images/facebook.png" alt="Facebook icon"></a> <!-- Facebook -->
+      <a href="https://www.instagram.com/the_miracle_by_f.j/" target="_blank"><img src="images/instagram.png" alt="Instagram icon"></a> <!-- Instagram -->
+      <a href="https://x.com/?lang=en" target="_blank"><img src="images/twitter.png" alt="Twitter icon"></a> <!-- Twitter -->
+    </div>
+    <p>&copy; 2025 The Miracle. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>
