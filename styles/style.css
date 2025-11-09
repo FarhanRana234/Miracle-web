@@ -1322,3 +1322,19 @@ img, video {
     position: relative;
   }
 }
+
+/* Products Section Images */
+.product img {
+  width: 100%;
+  height: 250px; /* Increased from 200px to 250px */
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: transform 0.3s ease;
+}
+
+/* Very Small Phones (≤480px) */
+@media (max-width: 480px) {
+  .product img {
+    height: 200px; /* Increased from 160px to 200px */
+  }
+}
