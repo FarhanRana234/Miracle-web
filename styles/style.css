@@ -176,7 +176,7 @@ nav ul li .dropdown li a:hover { color: #ffd700; }
 }
 .product img {
   width: 100%;
-  height: 380px;              /* MUCH TALLER IMAGE */
+  height: 480px;              /* MUCH TALLER IMAGE */
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
