@@ -1338,3 +1338,26 @@ img, video {
     height: 200px; /* Increased from 160px to 200px */
   }
 }
+
+/* Products Section Images - Responsive */
+.product img {
+  width: 100%;
+  height: auto; /* Let the image scale naturally */
+  max-height: 300px; /* Optional: cap height on desktop */
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for desktop */
+.product:hover img {
+  transform: scale(1.05);
+}
+
+/* Very Small Phones (≤480px) */
+@media (max-width: 480px) {
+  .product img {
+    max-height: 200px; /* Ensure it doesn't get too tall on small screens */
+  }
+}
+
