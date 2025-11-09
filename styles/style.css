@@ -1342,8 +1342,7 @@ img, video {
 /* Products Section Images - Responsive */
 .product img {
   width: 100%;
-  height: 250px; /* Let the image scale naturally */
-  max-height: 300px; /* Optional: cap height on desktop */
+  height: 300px; /* Let the image scale naturally */
   object-fit: cover;
   border-radius: 10px 10px 0 0;
   transition: transform 0.3s ease;
@@ -1354,10 +1353,4 @@ img, video {
   transform: scale(1.05);
 }
 
-/* Very Small Phones (≤480px) */
-@media (max-width: 480px) {
-  .product img {
-    max-height: 200px; /* Ensure it doesn't get too tall on small screens */
-  }
-}
 
