@@ -1299,3 +1299,27 @@ img, video {
     margin: 0 5px;
   }
 }
+
+/* Menu toggle button */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  z-index: 9999;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+}
+
+/* Make it visible only on mobile */
+@media (max-width: 991px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  header {
+    position: relative;
+  }
+}
+
