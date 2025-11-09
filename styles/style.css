@@ -1136,3 +1136,166 @@ footer p {
     margin-top: 10px;
   }
 }
+
+/* ------------------------------ */
+/* 🌐 Universal Responsive Tweaks */
+/* ------------------------------ */
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Prevent fixed widths from breaking on phones */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header and Navigation */
+@media (max-width: 991px) {
+  header {
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  /* Hide menu by default on smaller screens */
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: linear-gradient(135deg, #1a910f, #084d00);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  /* Add hamburger button */
+  .menu-toggle {
+    display: block;
+    font-size: 1.8rem;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* When menu is active (add `.active` via JS) */
+  nav ul.active {
+    display: flex;
+  }
+}
+
+/* Hide toggle button on desktop */
+@media (min-width: 992px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+/* --------------------------- */
+/* 📦 Sections & Layout Adjust */
+/* --------------------------- */
+
+/* Tablets and below */
+@media (max-width: 768px) {
+  .hero {
+    padding: 120px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .features, 
+  .product-list, 
+  .team-members, 
+  .story {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .feature, 
+  .product, 
+  .team-member {
+    margin: 20px 0;
+    max-width: 90%;
+  }
+
+  .story-content {
+    padding: 0;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .cta h2 {
+    font-size: 2rem;
+  }
+
+  footer {
+    padding: 30px 10px;
+  }
+}
+
+/* -------------------------------- */
+/* 📲 Very Small Phones (≤480px)    */
+/* -------------------------------- */
+@media (max-width: 480px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  header .logo img {
+    height: 60px;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  .btn, .contact button, .checkout-form .btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .hero {
+    padding: 100px 10px;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .product img {
+    height: 160px;
+  }
+
+  .contact form, 
+  .checkout-form {
+    padding: 15px;
+  }
+
+  .footer .social-icons a {
+    font-size: 1.2rem;
+    margin: 0 5px;
+  }
+}
