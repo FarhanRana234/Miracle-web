@@ -1330,7 +1330,7 @@ nav ul li .dropdown li a {
   height: 420px;
 }
 .product:hover { transform: translateY(-8px); box-shadow: 0 12px 28px rgba(0,0,0,0.15); }
-.product img { width: 100%; height: 200px; object-fit: cover; transition: transform 0.4s ease; }
+.product img { width: 100%; height: 300px; object-fit: cover; transition: transform 0.4s ease; }
 .product:hover img { transform: scale(1.08); }
 
 .product .content { padding: 18px; display: flex; flex-direction: column; justify-content: space-between; flex: 1; }
