@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us - The Miracle</title>
   <link rel="stylesheet" href="styles/style.css">
+
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
@@ -17,7 +18,15 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="products.html">Products</a></li>
+        <li class="has-dropdown">
+  <a href="products.html">Products</a>
+<ul class="dropdown">
+  <li><a href="products.html?category=skincare">Skincare</a></li>
+  <li><a href="products.html?category=haircare">Haircare</a></li>
+  <li><a href="products.html?category=bodycare">Bodycare</a></li>
+</ul>
+
+</li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="cart.html" class="cart-icon" data-count="0">&#128722;</a></li>
       </ul>

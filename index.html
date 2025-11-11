@@ -8,31 +8,31 @@
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
+  <!-- ================= HEADER ================= -->
   <header>
     <div class="logo">
       <img src="images/logo.jpeg" alt="The Miracle Logo">
     </div>
-
     <span class="menu-toggle">&#9776;</span>
-
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="products.html">Products</a>
-          <!-- Optional Dropdown Menu -->
-          <ul class="dropdown">
-            <li><a href="#">Skincare</a></li>
-            <li><a href="#">Haircare</a></li>
-            <li><a href="#">Accessories</a></li>
-          </ul>
-        </li>
+<li class="has-dropdown">
+  <a href="products.html">Products</a>
+<ul class="dropdown">
+  <li><a href="products.html?category=skincare">Skincare</a></li>
+  <li><a href="products.html?category=haircare">Haircare</a></li>
+  <li><a href="products.html?category=bodycare">Bodycare</a></li>
+</ul>
+</li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="cart.html" class="cart-icon" data-count="0">&#128722;</a></li>
       </ul>
     </nav>
   </header>
 
+  <!-- ================= HERO ================= -->
   <section class="hero">
     <div class="hero-content">
       <h1>Discover the Miracle of Nature</h1>
@@ -41,37 +41,43 @@
     </div>
   </section>
 
+  <!-- ================= FEATURES ================= -->
   <section class="features">
     <div class="feature">
+      <img src="images/natural.png" alt="Natural Icon" style="width:60px; margin-bottom:15px;">
       <h2>100% Natural</h2>
       <p>Made with organic ingredients, free from harmful chemicals.</p>
     </div>
     <div class="feature">
+      <img src="images/cruelty-free.png" alt="Cruelty-Free Icon" style="width:60px; margin-bottom:15px;">
       <h2>Cruelty-Free</h2>
       <p>We never test on animals. Ethical and sustainable.</p>
     </div>
     <div class="feature">
+      <img src="images/eco-friendly.png" alt="Eco-Friendly Icon" style="width:60px; margin-bottom:15px;">
       <h2>Eco-Friendly</h2>
       <p>Eco-conscious packaging to protect the planet.</p>
     </div>
   </section>
 
+  <!-- ================= CTA / SHOP ================= -->
+  <section class="cta">
+    <h2>Explore Our Collection</h2>
+    <p>Skincare, Haircare, and Bodycare products crafted from nature's best ingredients.</p>
+    <a href="products.html" class="btn">Shop All Products</a>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
   <footer>
     <div class="social-icons">
-      <a href="https://www.facebook.com/home.php" target="_blank"><img src="images/facebook.png" alt="Facebook icon"></a> <!-- Facebook -->
-      <a href="https://www.instagram.com/the_miracle_by_f.j/" target="_blank"><img src="images/instagram.png" alt="Instagram icon"></a> <!-- Instagram -->
-      <a href="https://x.com/?lang=en" target="_blank"><img src="images/twitter.png" alt="Twitter icon"></a> <!-- Twitter -->
+      <a href="https://www.facebook.com/home.php" target="_blank"><img src="images/facebook.png" alt="Facebook icon"></a>
+      <a href="https://www.instagram.com/the_miracle_by_f.j/" target="_blank"><img src="images/instagram.png" alt="Instagram icon"></a>
+      <a href="https://x.com/?lang=en" target="_blank"><img src="images/twitter.png" alt="Twitter icon"></a>
     </div>
     <p>&copy; 2025 The Miracle. All rights reserved.</p>
   </footer>
-  <script src="scripts/script.js"></script>
-  <script>
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navMenu = document.querySelector('nav ul');
 
-  menuToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-  });
-</script>
+  <!-- ================= SCRIPTS ================= -->
+  <script src="scripts/script.js"></script>
 </body>
 </html>

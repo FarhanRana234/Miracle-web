@@ -4,78 +4,150 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Products - The Miracle</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="styles/style.css">
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
+  <!-- ================= HEADER ================= -->
   <header>
     <div class="logo">
       <img src="images/logo.jpeg" alt="The Miracle Logo">
     </div>
-
     <span class="menu-toggle">&#9776;</span>
-
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="products.html">Products</a></li>
+<li class="has-dropdown">
+  <a href="products.html">Products</a>
+  <ul class="dropdown">
+    <li><a href="products.html#skincare" data-category="skincare">Skincare</a></li>
+    <li><a href="products.html#haircare" data-category="haircare">Haircare</a></li>
+    <li><a href="products.html#bodycare" data-category="bodycare">Body Care</a></li>
+    <li><a href="products.html#all" data-category="all">All</a></li>
+  </ul>
+</li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="cart.html" class="cart-icon" data-count="0">&#128722;</a></li>
+        <li><a href="cart.html" class="cart-icon" data-count="0"><i class="fas fa-shopping-cart"></i></a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="products">
-    <h1>Our Products</h1>
-     <!-- Search Bar -->
-   <div class="search-bar">
-    <input type="text" id="search-input" placeholder="Search products..." oninput="filterProducts()">
-    <button class="btn search-btn">Search</button>
-   </div>
-    <div class="product-list">
-      <div class="product" data-name="Hibiscus and rosemary Shampoo">
-        <img src="images/product1.jpeg" alt="Product 1">
-        <h3>Hibiscus and rosemary Shampoo</h3>
-        <p>A rejuvenating blend designed to gently cleanse and nourish your hair. Infused with the natural goodness of hibiscus and rosemary, this shampoo strengthens hair from root to tip, promotes healthy growth, and helps reduce hair fall.</p><br><br>
-        <button class="btn add-to-cart" data-id="1" data-name="Hibiscus and rosemary Shampoo" data-price="600.00">Add to Cart</button>
-      </div>
-      <div class="product" data-name="Rose Whitening Cream">
-        <img src="images/product2.jpg" alt="Product 2">
-        <h3>Rose Whitening Cream</h3>
-        <p>A luxurious blend designed to nourish and brighten your skin naturally. Infused with the essence of rose petals, this lightweight formula deeply hydrates while gently reducing dark spots and uneven tone.</p><br><br><br>
-        <button class="btn add-to-cart" data-id="2" data-name="Rose Whitening Cream" data-price="700.00">Add to Cart</button>
-      </div>
-      <div class="product" data-name="Keratin Hair oil">
-        <img src="images/product3.jpeg" alt="Product 3">
-        <h3>Rosemary and Hibiscus Keratin Hair oil</h3>
-        <p>Nourish and transform your hair with our Rosemary and Hibiscus Keratin Hair Oil.This luxurious blend combines the strengthening power of keratin with the natural goodness of rosemary and hibiscus. It deeply repairs.</p>
-        <button class="btn add-to-cart" data-id="3" data-name="Keratin Hair oil" data-price="600.00">Add to Cart</button>
-      </div>
-      <div class="product" data-name="Korean Licorice & Coffe Facemask">
-        <img src="images/product4.jpeg" alt="Product 4">
-        <h3>Licorice & Coffe Facemask</h3>
-        <p>Revitalize your skin with the nourishing blend of traditional Korean ingredients in our Rice & Coffee Face Mask. This innovative mask combines the gentle exfoliating properties of rice bran with the antioxidant-rich benefits of coffee.</p>
-        <button class="btn add-to-cart" data-id="4" data-name="Korean Licorice & Coffe Facemask" data-price="500.00">Add to Cart</button>
-      </div>
-      <div class="product" data-name="Charcoal whitening soap">
-        <img src="images/product5.jpeg" alt="Product 5">
-        <h3>Charcoal Whitening Soap</h3>
-        <p>Deep cleanse and brighten with our Charcoal Whitening Soap. Formulated with activated charcoal and skin-loving botanicals, this soap draws out impurities, removes excess oil, and helps lighten dark spots for a naturally radiant glow.</p>
-        <button class="btn add-to-cart" data-id="5" data-name="Charcoal whitening soap" data-price="500">Add to Cart</button>
-      </div>
+  <!-- ================= HERO ================= -->
+  <section class="about-hero">
+    <div class="about-hero-content">
+      <h1>Our Natural Products</h1>
+      <p>Explore skincare, haircare, and bodycare products crafted with pure natural ingredients.</p>
     </div>
   </section>
 
+  <!-- ================= SEARCH BAR ================= -->
+  <section class="products">
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Search products..." onkeyup="filterProducts()">
+      <button class="btn search-btn">
+        <i class="fas fa-search"></i> Search
+      </button>
+    </div>
+
+    <!-- ================= PRODUCT GRID ================= -->
+    <div class="product-list">
+
+      <!-- Product Card Example -->
+      <div class="product" data-name="Hibiscus and rosemary Shampoo" data-category="Haircare - Shampoo">
+        <div class="wishlist"><i class="fa-regular fa-heart"></i></div>
+        <img src="images/product1.jpeg" alt="Hibiscus and Rosemary Shampoo">
+        <div class="content">
+          <h3>Hibiscus and Rosemary Shampoo</h3>
+          <p>A rejuvenating blend designed to gently cleanse and nourish your hair. Infused with hibiscus and rosemary to strengthen from root to tip.</p>
+          <span class="product-price">Rs. 600</span>
+        </div>
+        <button class="btn add-to-cart" data-id="1" data-name="Hibiscus and rosemary Shampoo" data-price="600.00">Add to Cart</button>
+      </div>
+
+      <div class="product" data-name="Rose Whitening Cream" data-category="Skincare - Cream">
+        <div class="wishlist"><i class="fa-regular fa-heart"></i></div>
+        <img src="images/product2.jpg" alt="Rose Whitening Cream">
+        <div class="content">
+          <h3>Rose Whitening Cream</h3>
+          <p>A luxurious blend designed to nourish and brighten your skin naturally. Infused with rose petals for deep hydration and tone correction.</p>
+          <span class="product-price">Rs. 700</span>
+        </div>
+        <button class="btn add-to-cart" data-id="2" data-name="Rose Whitening Cream" data-price="700.00">Add to Cart</button>
+      </div>
+
+      <div class="product" data-name="Keratin Hair Oil" data-category="Haircare - Oil">
+        <div class="wishlist"><i class="fa-regular fa-heart"></i></div>
+        <img src="images/product3.jpeg" alt="Rosemary and Hibiscus Keratin Hair Oil">
+        <div class="content">
+          <h3>Rosemary and Hibiscus Keratin Hair Oil</h3>
+          <p>Strengthen and repair damaged hair with our keratin-rich oil infused with hibiscus and rosemary for deep nourishment and shine.</p>
+          <span class="product-price">Rs. 600</span>
+        </div>
+        <button class="btn add-to-cart" data-id="3" data-name="Keratin Hair oil" data-price="600.00">Add to Cart</button>
+      </div>
+
+      <div class="product" data-name="Licorice & Coffee Facemask" data-category="Skincare - Facemask">
+        <div class="wishlist"><i class="fa-regular fa-heart"></i></div>
+        <img src="images/product4.jpeg" alt="Licorice & Coffee Facemask">
+        <div class="content">
+          <h3>Licorice & Coffee Facemask</h3>
+          <p>Revitalize your skin with rice and coffee extracts that gently exfoliate and brighten your complexion with each use.</p>
+          <span class="product-price">Rs. 500</span>
+        </div>
+        <button class="btn add-to-cart" data-id="4" data-name="Korean Licorice & Coffee Facemask" data-price="500.00">Add to Cart</button>
+      </div>
+
+      <div class="product" data-name="Charcoal Whitening Soap" data-category="Bodycare">
+        <div class="wishlist"><i class="fa-regular fa-heart"></i></div>
+        <img src="images/product5.jpeg" alt="Charcoal Whitening Soap">
+        <div class="content">
+          <h3>Charcoal Whitening Soap</h3>
+          <p>Deep cleanse with activated charcoal and botanical extracts that remove impurities and leave your skin radiant and smooth.</p>
+          <span class="product-price">Rs. 500</span>
+        </div>
+        <button class="btn add-to-cart" data-id="5" data-name="Charcoal whitening soap" data-price="500.00">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
   <footer>
     <div class="social-icons">
-      <a href="https://www.facebook.com/home.php" target="_blank"><img src="images/facebook.png" alt="Facebook icon"></a> <!-- Facebook -->
-      <a href="https://www.instagram.com/the_miracle_by_f.j/" target="_blank"><img src="images/instagram.png" alt="Instagram icon"></a> <!-- Instagram -->
-      <a href="https://x.com/?lang=en" target="_blank"><img src="images/twitter.png" alt="Twitter icon"></a> <!-- Twitter -->
+      <a href="https://www.facebook.com/home.php" target="_blank"><img src="images/facebook.png" alt="Facebook icon"></a>
+      <a href="https://www.instagram.com/the_miracle_by_f.j/" target="_blank"><img src="images/instagram.png" alt="Instagram icon"></a>
+      <a href="https://x.com/?lang=en" target="_blank"><img src="images/twitter.png" alt="Twitter icon"></a>
     </div>
     <p>&copy; 2025 The Miracle. All rights reserved.</p>
   </footer>
 
   <script src="scripts/script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+  const params = new URLSearchParams(window.location.search);
+  const category = params.get('category'); // gets category from URL
+
+  if (category) {
+    filterByCategory(category); // call your existing filter function
+  }
+});
+
+// Example filter function
+function filterByCategory(category) {
+  const products = document.querySelectorAll('.product');
+
+  products.forEach(product => {
+    const productCategory = product.getAttribute('data-category').toLowerCase();
+
+    if (category === 'all' || productCategory.includes(category.toLowerCase())) {
+      product.style.display = 'block';
+    } else {
+      product.style.display = 'none';
+    }
+  });
+}
+  </script>
 </body>
 </html>
