@@ -134,9 +134,8 @@ nav ul li a:hover::after {
   padding: 150px 20px;
 }
 
-.hero-content, .about-hero-content {
-  position: relative;
-  z-index: 1;
+.hero-content h1{
+  color: #1a910f
 }
 
 .hero h1, .about-hero h1 {
