@@ -167,3 +167,11 @@ document.querySelectorAll('nav ul li.has-dropdown > a').forEach(link => {
     }
   });
 });
+
+const features = document.querySelectorAll('.feature');
+window.addEventListener('scroll', () => {
+  features.forEach(f => {
+    const rect = f.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) f.classList.add('visible');
+  });
+});
