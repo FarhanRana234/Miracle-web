@@ -138,7 +138,7 @@ nav ul li a:hover::after {
   color: #1a910f
 }
 
-.about-hero h1{
+.about-hero-content h1{
   color: #1a910f
 }
 
@@ -1695,4 +1695,8 @@ footer .social-icons img:hover {
   padding: 0 4px;
   box-sizing: border-box;
   line-height: 1;
+}
+
+.about-hero-content h1{
+  color: #1a910f
 }
