@@ -1693,19 +1693,3 @@ footer .social-icons img:hover {
   line-height: 1;
 }
 
-/* Floating cart icon on mobile */
-@media (max-width: 768px) {
-  .cart-icon {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    font-size: 2rem;
-    background: linear-gradient(135deg, #1a910f, #084d00);
-    color: #fff;
-    padding: 15px;
-    border-radius: 50%;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-    z-index: 9999;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
