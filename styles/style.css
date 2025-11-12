@@ -1230,6 +1230,7 @@ nav ul li .dropdown li a {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
+  text-align: center;
 }
 .search-bar .btn.search-btn:hover { background: #0d6904; transform: scale(1.05); }
 
