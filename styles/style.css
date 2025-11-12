@@ -138,6 +138,10 @@ nav ul li a:hover::after {
   color: #1a910f
 }
 
+.about-hero h1{
+  color: #1a910f
+}
+
 .hero h1, .about-hero h1 {
   font-size: 3rem;
 }
