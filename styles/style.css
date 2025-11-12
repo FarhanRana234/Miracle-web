@@ -1303,7 +1303,7 @@ footer .social-icons a:hover { color: #ffd700; }
   nav ul li .dropdown { position: static; background: none; box-shadow: none; }
 }
 @media (max-width: 768px) {
-  .product img { height: 180px; }
+  .product img { height: 250px; }
   .product h3 { font-size: 1.1rem; }
   .product p { font-size: 0.9rem; }
   .product { height: auto; }
